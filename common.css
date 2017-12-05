@@ -1,0 +1,95 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+div,li,a{
+	display: block;
+}
+body {
+    background-color: #fff;
+	word-wrap:break-word;
+	font-family: "微软雅黑";
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+input,textarea{
+	outline:none;
+	-webkit-appearance: none;/*清除 iOS 下 input 表单的阴影*/
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a{
+	text-decoration: none;
+}
+a:active{
+	-webkit-tap-highlight-color:transparent;  /*a链接点击消除蓝色背景*/
+}
+img{
+	border: none;
+}
+/*弹框  确定取消样式*/
+.btn-box-pop{	
+	font-size: 15px;
+	border-top: 1px solid #ededed;
+	overflow: hidden;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.btn-box-pop a{
+	line-height: 1.5em;
+	color: #333;
+	float: left;
+	text-align: center;
+	padding: 11px 0px;
+}
+.btn-box-pop .confirm{
+	width: 50%;
+	color: #88c5be;
+}
+.btn-box-pop .cancel{
+	width: 49%;
+	color: #9c9c9c;
+	border-right: 1px solid #e6e6e6;
+}
+
+/*悬浮购物车*/
+.shopping-cart{
+	position: relative;
+	position: fixed;
+	bottom: 20%;
+	right: 15px;
+	background:rgba(102,102,102,0.8);
+	padding: 7px;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	box-shadow: 0px 0px 10px rgba(247,137,72,0.5);
+	z-index: 999;
+}
+.shopping-cart img{
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.shopping-cart span{
+	background: rgba(247,137,72,1);
+	color: #fff;
+	line-height: 14px;
+	min-width: 14px;
+	font-size: 12px;
+	border-radius: 17px;
+	transform: scale(.9);
+	text-align: center;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	padding: 1px 3px 3px;
+}
